@@ -10,7 +10,7 @@ redirect_from:
 
 Hey y’all! I’m Jason Lin, a creative soul living & studying in Los Angeles, CA. Currently I’m a doctoral candidate in the [Department of Biomathematics](https://www.biomath.ucla.edu/) under the [University of California, Los Angeles](http://www.ucla.edu/).
 
-My current academic advisor is [Prof. Van Savage](https://vsavage.faculty.biomath.ucla.edu/).
+My current advisor is [Prof. Van Savage](https://vsavage.faculty.biomath.ucla.edu/).
 
 My research interests are Theoretical Ecology, [Stability](https://en.wikipedia.org/wiki/Ecological_stability), Food Web Dynamics, System Biology, Networks Science, Decision Making, Evolution, information dynamics in biology & signalling.
 
