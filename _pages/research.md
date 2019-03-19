@@ -11,6 +11,8 @@ Determining how food webs maintain dynamical stability is a major challenge in c
 
 ![schematic diagram for size-stability project](/images/schematic_diagram_size_stability_proj2.png)
 
+<img src='/images/500x300.png'>
+
 ## Temperature Dependent Food Web Stability
 
 
