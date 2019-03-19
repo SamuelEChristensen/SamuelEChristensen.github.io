@@ -2,7 +2,7 @@
 title: "Computational Systems Biology: Modeling and Simulation of Biological Systems"
 collection: teaching
 type: "Undergraduate/Graduate course (CS/BE/CS&B/EEB M186/286/178)"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2018-spring-teaching-1
 venue: "UCLA, Computational and Systems Biology"
 date: 2018-04-01
 location: "Los Angeles, US"
