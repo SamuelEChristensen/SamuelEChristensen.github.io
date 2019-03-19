@@ -15,7 +15,8 @@ Determining how food webs maintain dynamical stability is a major challenge in c
 
 ## Temperature Dependent Food Web Stability
 
-
+Work in progress...
 
 ## Dimensionality Induced Network Motif Pattern
 
+Work in progress...
