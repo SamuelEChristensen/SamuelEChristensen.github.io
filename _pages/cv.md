@@ -11,30 +11,47 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Biomathematics and Mathematics, Rutgers University, 2016
+* M.S. in Biomathematics, University of California, Los Angeles, 2018
+* Ph.D in Biomathematics, University of California, Los Angeles, 2021 (expected)
 
-Work experience
+Research experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* October 2012 – Summer 2013: Experiment Assistant
+  * CABM Structural Bioinformatics Laboratory (@ Rutgers)
+  * Duties included: His-tag Chemical Binding Chromatography, using “Cap” method finding protein crystal, primer designing, DNA cloning, and X-ray Crystallography.
+  * Supervisor: Professor Guy Montelione
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2013: Undergraduate Research Fellow
+  * Summer Undergraduate Research Experience (SURE) Program & Byrne Seminar Research Program in CABM (Rutgers)
+  * Duties included: Focus on solving protein (Enzyme+Coenzyme+Cofactor) structure by crystallization (focus on Crystal structure with enzyme and cofactor), using maltose-binding-protein to increase the solubility of enzyme, Zygosaccharomyces rouxii. ATCC 2623
+  * Supervisor: Professor Guy Montelione
+
+* Summer 2014: Bernstein Scholarship Research Fellow
+  * Bernstein Scholarship Summer research in the Center for Integrative Proteomics (Montelione Lab)
+  * Duties included: Studying and comparing the similarity as well as difference of disorder-region within proteins between protein crystal structure data (through experiments) and software prediction (such as SEG) by using data mining to analyze data from Protein Data Bank (PDB).
+  * Supervisor: Professor Guy Montelione
   
+* Summer 2014 – November 2015: Team member, Wetlab core member
+  * BIOMOD competition, Rutgers Team “Nzymes ‘R’ Us”, Khare Lab, Proteomics, Piscataway, NJ
+  * Duties included: (1) Team Project Website: http://eden.rutgers.edu/~biomod/index.html; (2) Design Primer/Gblock for target PDZ/SH3 domains; (3) Perform Site directed mutagenesis, Amplification, and Gibson Assembly to insert target DNA (DNA for PDZ/SH3 domains) into plamid (pet16 in our case); (4) Express and purify PDZ/SH3 domain proteins; (5) Analyze fluorescent protein mutation impact by using Fluorescent Assay; (6) Completing the Wet lab part of the Project Website (Including Lab protocol, Equipment, and Experimental Status): http://eden.rutgers.edu/~biomod/experiments.html.
+  * Supervisor: Professor Sagar Khare
+  
+* June 2015 – July 2016: Independent interdisciplinary undergraduate researcher
+  * Honors Interdisciplinary Undergraduate Thesis: Predicting and Enhancing Enzyme Clustering Efficiency, collaboration with Khare Lab & Prof. Eduardo Sontag, Proteomics.
+  * Duties included: (1) Analyze preliminary research in enzyme scaffolding and enzyme clustering; (2)Create toy model to simulate enzymatic reaction within a cell and change to distribution of enzyme in order to find the optimum enzyme distribution.
+  * Supervisor: Professor Eduardo Sontag & Sagar Khare
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Intermediate Skill in X-Ray Crystallography
+* Biochemistry and Genetics Lab Operation and Regulation
+* Programming:
+  * Matlab
+  * R
+  * Julia
+  * Python
+  * Java
 
 Publications
 ======
