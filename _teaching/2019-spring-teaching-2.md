@@ -1,7 +1,7 @@
 ---
-title: "Biological Modeling: Mathematical and Computational Approaches"
+title: "Computer Lab (Biological Modeling: Mathematical and Computational Approaches)"
 collection: teaching
-type: "Undergradaute course (C&SB 150)"
+type: "Teaching Assistant (C&SB 150)"
 permalink: /teaching/2019-spring-teaching-2
 venue: "UCLA, Computational and Systems Biology"
 date: 2019-04-01
