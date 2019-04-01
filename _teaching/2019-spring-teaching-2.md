@@ -14,7 +14,7 @@ Here is the [syllabus](https://tlin56.github.io/files/150_lab_syllabus_spring_20
 
 List of labs with description:
 ======
-- Week1: Introduction to Matlab
+- Week1: Intro to Matlab & ODE Solving
   - What is Matlab?
   - Basic operations and coding.
   - Writing scripts and functions.
@@ -22,23 +22,24 @@ List of labs with description:
   - Boolean.
   - Vectorize.
   - Save and load data.
-  - ODE45 (maybe).
-- Week2: Numerical Methods for solving ODE
+  - ODE45.
   - Examine different types of numerical solvers for ODE and the effect of step size on the error.
-- Week3: Eigenvalues
+- Week2: Eigenvalues
   - Brief explanation of how to find eigenvalues. 
   - Logic of basic methods and characteristic equations and polynomial.
-- Week4: Bistability
+- Week3: Bistability
   - Use Matlab to simulate and analyze dynamical systems that use ODE; use ODE45 to numerically solve; address fixed points and nullclines; also perform sensitivity analysis.
-- Week5: Predator-Prey
+- Week4: Predator-Prey
   - Develop agent-based model for predator-prey dynamics; study how "handling time" arise from individual dynamics.
-- Week6: Epidemic outbreaks
+- Week5: Epidemic outbreaks
   - Model outbreaks using SIR/SIRS model; study the speed, strength and size of outbreaks.
-- Week7: Michaelis Menten
+- Week6: Michaelis Menten
   - Michaelis-Menten enzyme-substrate dynamics and the Quasi Steady State Assumption.
-- Week8: Hodgkin-Huxley
+- Week7: Hodgkin-Huxley
   - Use Matlab to simulate an excitatory system with the specic case-study of a neuron in mind.
-- Week9: Network
+- Week8: Network
   - Use Gephi to study some properties of various networks and methods of how to visualize them.
-- Week10: Fractal
+- Week9: Fractal
   - Learn basic skills you need for analyzing fractals, including box counting method, manipulating images, thresholding, and a bit about regression and model comparison.
+- Week10: Game Theory
+  - Explore the interactions between strategies, games, and population outcomes.
