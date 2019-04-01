@@ -10,6 +10,8 @@ location: "Los Angeles, US"
 
 Lead the computer labs where we explore various biological modeling through computational approach (Matlab), e.g. Lokta-Volterra model, Michaelis Menten Model, Hodgkin-Huxley Model, SIR model, Network, Fractal and etc...
 
+Here is the [syllabus](https://tlin56.github.io/files/150_lab_syllabus_spring_2019.pdf) for the course.
+
 List of labs with description:
 ======
 - Week1: Introduction to Matlab
