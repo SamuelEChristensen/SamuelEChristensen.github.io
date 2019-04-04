@@ -14,7 +14,7 @@ Here is the [syllabus](https://tlin56.github.io/files/150_lab_syllabus_spring_20
 
 List of labs with description:
 ======
-- Week1: Intro to Matlab & ODE Solving
+- [Week1: Intro to Matlab & ODE Solving](https://tlin56.github.io/files/lab1_lecture_notes_csb150_spring_2019_website.pdf)
   - What is Matlab?
   - Basic operations and coding.
   - Writing scripts and functions.
