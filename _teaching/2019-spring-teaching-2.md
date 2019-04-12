@@ -24,7 +24,7 @@ List of labs with description:
   - Save and load data.
   - ODE45.
   - Examine different types of numerical solvers for ODE and the effect of step size on the error.
-- Week2: Eigenvalues
+- [Week2: Eigenvalues](https://tlin56.github.io/files/lab2_lecture_notes_csb150_spring_2019.pdf)
   - Brief explanation of how to find eigenvalues. 
   - Logic of basic methods and characteristic equations and polynomial.
 - Week3: Bistability
