@@ -33,7 +33,7 @@ List of labs with description:
   - Develop agent-based model for predator-prey dynamics; study how "handling time" arise from individual dynamics.
 - Week5: Epidemic outbreaks
   - Model outbreaks using SIR/SIRS model; study the speed, strength and size of outbreaks.
-- Week6: Michaelis Menten
+- [Week6: Michaelis Menten](https://tlin56.github.io/files/lab6_lecture_notes_csb150_spring_2019.pdf)
   - Michaelis-Menten enzyme-substrate dynamics and the Quasi Steady State Assumption.
 - Week7: Hodgkin-Huxley
   - Use Matlab to simulate an excitatory system with the specic case-study of a neuron in mind.
