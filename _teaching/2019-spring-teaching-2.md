@@ -36,8 +36,8 @@ List of labs with description:
 - [Week6: Michaelis Menten](https://tlin56.github.io/files/lab6_lecture_notes_csb150_spring_2019.pdf)
   - Michaelis-Menten enzyme-substrate dynamics and the Quasi Steady State Assumption.
 - Week7: Hodgkin-Huxley
-  - Use Matlab to simulate an excitatory system with the specic case-study of a neuron in mind.
-- Week8: Network
+  - Use Matlab to simulate an excitatory system with the specific case-study of a neuron in mind.
+- [Week8: Network](https://tlin56.github.io/files/Lab8_Network.pdf)
   - Use Gephi to study some properties of various networks and methods of how to visualize them.
 - Week9: Fractal
   - Learn basic skills you need for analyzing fractals, including box counting method, manipulating images, thresholding, and a bit about regression and model comparison.
