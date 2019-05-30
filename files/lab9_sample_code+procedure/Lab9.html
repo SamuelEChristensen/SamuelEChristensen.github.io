@@ -1,0 +1,165 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Fractals - Box Counting Method</title><meta name="generator" content="MATLAB 9.6"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-05-29"><meta name="DC.source" content="Lab9.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Fractals - Box Counting Method</h1><!--introduction--><p>In this lab you will learn nasic skills you need for analayzing fractals, including box counting method, manipulating images, thresholding,and a bit about regression and model comparison. Below are sample code and procedure.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Installation</a></li><li><a href="#2">Change working directory</a></li><li><a href="#3">Load and process image of interest</a></li><li><a href="#7">Analyze the dimension of the image</a></li></ul></div><h2 id="1">Installation</h2><p>Install boxcount.m under the Matlab folder by simply saving the code in that directory. Type "help boxcount" to see that it is now a recognized commant in Matlab.</p><h2 id="2">Change working directory</h2><p>2. Change directory to directory with your images. Use commands "pwd"= present working diretory, "cd.."=change directory to the one that is one level above, "ls"=list contents of file, "cd directory" to change directory that is one level below. And can use "Tab" to complete directory name after only first few letters.</p><h2 id="3">Load and process image of interest</h2><p>(1) loads image file, note that we assigned 'im1' variable to store our image.</p><pre class="codeinput">im1 = imread(<span class="string">'dla.gif'</span>);
+</pre><p>(2) Look at image, the image might not look clear right now since since we haven't rescale the color yet.</p><pre class="codeinput">image(im1);
+</pre><img vspace="5" hspace="5" src="Lab9_01.png" alt=""> <p>pull out just part you want. here you can change the current section to the section you want to analyze. The last value 1 stand for the first layer of the color panel for the image, since the image is .gih, there is only 1 color panel (either black or white). If you're using a RGB colored image, then it should have 3 layer for the color panel: Red, Green and Blue.</p><pre class="codeinput">i = im1(20:160, 25:240, 1);
+</pre><p>Check what you pulled out:</p><pre class="codeinput">image(i)
+<span class="comment">% Sets full color scale for image:</span>
+imagesc(~i);
+ <span class="comment">% Converts to gray scale:</span>
+colormap <span class="string">gray</span>;
+</pre><img vspace="5" hspace="5" src="Lab9_02.png" alt=""> <h2 id="7">Analyze the dimension of the image</h2><p>run the command and generate the data. Note that here we are running the box counting method on the whole image, if you only want to analyze the section you selected, then you should replace im1 with i. Stores data in matrix for n=number of boxes, r=size/radius of boxes:</p><pre class="codeinput">[n,r]=boxcount(im1);
+</pre><p>look at data, x axis is 1st argument, y axis is 2nd argument:</p><pre class="codeinput">h = figure(<span class="string">'DefaultAxesFontSize'</span>,18);
+plot(log(r),log(n),<span class="string">'bo-'</span>)
+xlabel(<span class="string">'log(r, box size)'</span>,<span class="string">'FontSize'</span>,18)
+ylabel(<span class="string">'log(n, number of boxes)'</span>,<span class="string">'FontSize'</span>,18)
+title(<span class="string">'2D box-count'</span>,<span class="string">'FontSize'</span>,18)
+</pre><img vspace="5" hspace="5" src="Lab9_03.png" alt=""> <p>Do 1st-degree linear polynimial fit to data to find slope:</p><pre class="codeinput">pf=polyfit(log(r'),log(n'),1)
+</pre><pre class="codeoutput">
+pf =
+
+   -1.5922   11.3545
+
+</pre><p>Look at local slope and notice region of stability, and think about how does this slope compare with the value calculated by polyfit above?</p><pre class="codeinput">boxcount(im1, <span class="string">'slope'</span>)
+</pre><img vspace="5" hspace="5" src="Lab9_04.png" alt=""> <pre class="codeinput"><span class="comment">%(Compare data with lines from two different estimates of slope. Which is better and why?</span>
+plot(log(n),log(r),<span class="string">'bo-'</span>,log((r/r(end)).^(-1.7)),log(r),<span class="string">'r--'</span>,log((r/r(end)).^(-1.59)),log(r),<span class="string">'g--'</span>)
+ylabel(<span class="string">'log(r, box size)'</span>)
+xlabel(<span class="string">'log(n, number of boxes)'</span>)
+legend(<span class="string">'Empirical measure of log(n) versus log(r)'</span>,<span class="string">'Estimation by local slope'</span>,<span class="string">'Rstimation by polyfit'</span>)
+</pre><img vspace="5" hspace="5" src="Lab9_05.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Fractals - Box Counting Method
+% In this lab you will learn nasic skills you need for analayzing fractals,
+% including box counting method, manipulating images, thresholding,and a bit
+% about regression and model comparison. Below are sample code and
+% procedure.
+
+%% Installation
+% Install boxcount.m under the Matlab folder by simply saving the code in
+% that directory. Type "help boxcount" to see that it is now a recognized
+% commant in Matlab.
+
+%% Change working directory
+% 2. Change directory to directory with your images. Use commands 
+% "pwd"= present working diretory, "cd.."=change directory to the one that 
+% is one level above, "ls"=list contents of file, "cd directory" to change
+% directory that is one level below. And can use "Tab" to complete directory
+% name after only first few letters.
+
+%% Load and process image of interest
+% (1) loads image file, note that we assigned 'im1' variable to store our
+% image.
+im1 = imread('dla.gif');
+%%
+% (2) Look at image, the image might not look clear right now since since
+% we haven't rescale the color yet.
+image(im1);
+%%
+% pull out just part you want. here you can change the current section to
+% the section you want to analyze. The last value 1 stand for the first
+% layer of the color panel for the image, since the image is .gih, there
+% is only 1 color panel (either black or white). If you're using a RGB
+% colored image, then it should have 3 layer for the color panel: Red,
+% Green and Blue.
+i = im1(20:160, 25:240, 1);
+%%
+% Check what you pulled out:
+image(i) 
+% Sets full color scale for image:
+imagesc(~i);
+ % Converts to gray scale:
+colormap gray;
+%% Analyze the dimension of the image
+% run the command and generate the data. Note that here we are running the
+% box counting method on the whole image, if you only want to analyze the
+% section you selected, then you should replace im1 with i. Stores data in
+% matrix for n=number of boxes, r=size/radius of boxes:
+[n,r]=boxcount(im1);
+%%
+% look at data, x axis is 1st argument, y axis is 2nd argument:
+h = figure('DefaultAxesFontSize',18);
+plot(log(r),log(n),'bo-')
+xlabel('log(r, box size)','FontSize',18)
+ylabel('log(n, number of boxes)','FontSize',18)
+title('2D box-count','FontSize',18)
+%%
+% Do 1st-degree linear polynimial fit to data to find slope:
+pf=polyfit(log(r'),log(n'),1)
+%%
+% Look at local slope and notice region of stability, and think about how
+% does this slope compare with the value calculated by polyfit above?
+boxcount(im1, 'slope')
+%%
+%(Compare data with lines from two different estimates of slope. Which is better and why?
+plot(log(n),log(r),'bo-',log((r/r(end)).^(-1.7)),log(r),'rREPLACE_WITH_DASH_DASH',log((r/r(end)).^(-1.59)),log(r),'gREPLACE_WITH_DASH_DASH')
+ylabel('log(r, box size)')
+xlabel('log(n, number of boxes)')
+legend('Empirical measure of log(n) versus log(r)','Estimation by local slope','Rstimation by polyfit')
+##### SOURCE END #####
+--></body></html>
