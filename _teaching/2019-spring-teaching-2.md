@@ -39,7 +39,7 @@ List of labs with description:
   - Use Matlab to simulate an excitatory system with the specific case-study of a neuron in mind.
 - [Week8: Network](https://tlin56.github.io/files/Lab8_Network.pdf)
   - Use Gephi to study some properties of various networks and methods of how to visualize them.
-- Week9: [Fractal](https://tlin56.github.io/files/lab9.html)
+- Week9: [Fractal](https://tlin56.github.io/files/lab9_Fractals.pdf)
   - Learn basic skills you need for analyzing fractals, including box counting method, manipulating images, thresholding, and a bit about regression and model comparison.
 - Week10: Game Theory
   - Explore the interactions between strategies, games, and population outcomes.
