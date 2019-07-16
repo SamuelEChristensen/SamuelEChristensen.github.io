@@ -1,6 +1,6 @@
 ---
 title: "Piano at the garden"
-excerpt: "San Francisco Botanical Garden  - July/13/2019<br/><img src='/images/DSC_2826.jpg'>"
+excerpt: "San Francisco Botanical Garden  - July/13/2019<br/><img src='/images/DSC_2903_edit.jpg'>"
 collection: portfolio
 ---
 
