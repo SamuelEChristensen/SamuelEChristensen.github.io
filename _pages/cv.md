@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+**E-mail:** tlin56@ucla.edu
+
 Education
 ======
 * B.S. in Biomathematics and Mathematics, Rutgers University, 2016
