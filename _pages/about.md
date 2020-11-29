@@ -1,17 +1,17 @@
 ---
 permalink: /
-title: "A bit about me..."
-excerpt: "About me"
+title: "Bio"
+excerpt: "Bio"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Hey y’all! I’m Jason Lin, a creative soul living & studying in Los Angeles, CA. Currently I’m a doctoral candidate in the [Department of Biomathematics](https://www.biomath.ucla.edu/) under the [University of California, Los Angeles](http://www.ucla.edu/).
+I’m a 4th year PhD student studying [Biomathematics](https://www.biomath.ucla.edu/) at the University of California, Los Angeles. I received my B.S. in Honors Mathematics and Biophysics in 2017 from the University of Michigan.
 
-My current advisor is [Prof. Van Savage](https://vsavage.faculty.biomath.ucla.edu/).
+My advisor is [Prof. Marcus Roper](https://www.math.ucla.edu/people/ladder/mroper).
 
-My research interests are Theoretical Ecology, [Stability](https://en.wikipedia.org/wiki/Ecological_stability), Food Web Dynamics, System Biology, Networks Science, Decision Making, Evolution, information dynamics in biology & signalling.
+My research interests are Fluid Dynamics, Numerical Analysis, Mathematical Biology, Asymptotic Analysis, Microfluidic Devices, and Mathematical Modeling.
 
-Currently, I am working with Van Savage on various projects. The main project embarks on exploring the idea that the trophic interaction dimensionality can be one of the significant stressors for the bimodality in size-ratio distributions of ecological communities.
+I created InFocus, a tool for fast calculation of focusing positions in microfluidic channels.  See my code section for more examples of projects I've coded.
