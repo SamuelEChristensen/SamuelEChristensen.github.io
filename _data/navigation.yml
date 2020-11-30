@@ -14,7 +14,7 @@ main:
 #    url: /year-archive/
     
   - title: "CV"
-    url: https://github.com/SamuelEChristensen/SamuelEChristensen.github.io/raw/master/images/resume.pdf
+    url: /images/resume.pdf/
     
   - title: "Portfolio"
     url: /portfolio/
