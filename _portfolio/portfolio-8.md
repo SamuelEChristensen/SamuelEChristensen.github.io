@@ -1,6 +1,6 @@
 ---
 title: "CV"
-excerpt: "Genbaku Dome - July/23/2015<br/><img src='/images/DSC_0571.jpg'>"
+excerpt: "my CV<br/><img src='/images/resume.pdf'>"
 collection: portfolio
 ---
 
