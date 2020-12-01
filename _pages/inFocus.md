@@ -10,7 +10,7 @@ author_profile: false
 InFocus is an easy-to-use tool that can calculate particle focusing positions in a channel of arbitrary cross section after just a few minutes of computation on a desktop computer.
  The method used draws upon and sharpens asymptotic theory to replace particles by singularities of known sizes.  Read more about the algorithm on The Arxiv.
  
- ## Download 
+## Download 
  
  [Download Infocus on github](https://github.com/SamuelEChristensen?tab=repositories)
 
