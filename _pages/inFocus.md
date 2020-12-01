@@ -11,9 +11,11 @@ InFocus is an easy-to-use tool that can calculate particle focusing positions in
  The method used draws upon and sharpens asymptotic theory to replace particles by singularities of known sizes.  Read more about the algorithm on The Arxiv.
  
  ## Download 
+ 
  [Download Infocus on github](https://github.com/SamuelEChristensen?tab=repositories)
 
 ## Examples
+
 <p align="center">
   <img align="center" src='/images/schematic_diagram_size_stability_proj2.png' width="50%">
 </p>
