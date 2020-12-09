@@ -11,4 +11,4 @@ author_profile: true
 
 - **Christensen S.**, Chu R., Anderson C., Roper M.  Fast Asymptotic-Numerical Method For Coarse Mesh Particle Simulation In Channel Of Arbitrary Cross Section.
 
-Chu R., **Christensen S.**, Ji H., Roper M. A theory for curvature-induced migration in inertial microfluidic devices.
+- Chu R., **Christensen S.**, Ji H., Roper M. A theory for curvature-induced migration in inertial microfluidic devices.
