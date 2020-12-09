@@ -24,7 +24,7 @@ Re = 1;  %Reynolds Number
 ```
 
 <p align="center">
-  <img align="center" src='/images/schematic_diagram_size_stability_proj2.png' width="50%">
+  <img align="center" src='/images/ex1pic.png' width="50%">
 </p>
 
 Example: Take advantage of symmetry by specifying points and using reflections
@@ -40,13 +40,28 @@ settings = {'reflectx','reflecty'};  %commands to take advantage of symmetry
 [xp,v] = findMigrationPolyChannel(pv, Re, fh, xp, settings)
 ```
 
+<p align="center">
+  <img align="center" src='/images/ex2pic.png' width="50%">
+</p>
 
-% Example (Define a channel with curved edges)
 
+Example (Define a channel with curved edges)
+```matlab
+fd=@(p) ddiff(dcircle(p,0,0,1),drectangle(p,-1,0,-1,1));
+bbox = [0,-1;1,1];
+Re = 1
+fh=@(p) min(0.02+max(0,0.5*drectangle(p, 0, 1, 0, 1).^3),0.05);
+pfix = [0,-1;0,1];
+[X,Y] =  meshgrid(0:0.1:1);
+X = reshape(X,numel(X),1);
+Y = reshape(Y,numel(Y),1);
+xp = [X,Y]';
+settings = {'reflectx'};
+[xp,v] = findMigrationCurveChannel(fd,bbox,pfix, Re,fh,xp,settings)
+```
 
+<p align="center">
+  <img align="center" src='/images/ex3pic.png' width="50%">
+</p>
 
-% Example ()
-
-more complicated stuff 
-
-Work in progress...
+For more instruction on how to construct a boundary function for your channel geometry see [DistMesh](http://persson.berkeley.edu/distmesh/).
