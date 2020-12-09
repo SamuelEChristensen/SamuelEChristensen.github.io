@@ -4,10 +4,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-- Pawar S, Dell AI, **Lin Tianyun**, Wieczynski DJ and Savage VM (2019) Interaction Dimensionality Scales Up to Generate Bimodal Consumer-Resource Size-Ratio Distributions in Ecological Communities. Front. Ecol. Evol. 7:202. doi: 10.3389/fevo.2019.00202 [LINK](https://www.frontiersin.org/articles/10.3389/fevo.2019.00202/abstract)
-
-- Yang, Lu, Elliott M. Dolan, Sophia K. Tan, **Tianyun Lin**, Eduardo D. Sontag, and Sagar D. Khare. Computation‐Guided Design of a Stimulus‐Responsive Multienzyme Supramolecular Assembly. *ChemBioChem* 18, no. 20 (2017): 2000-2006. [LINK](https://onlinelibrary.wiley.com/doi/full/10.1002/cbic.201700425)
+## Accepted
+- Huang Y., **Christensen S.**, Walch O., Forger D. (2020) Optimal adjustment of the human circadian clock in the real world. PloS Comput. Biol.
 
 # In Preparation/Review
 
-- **Lin, Tianyun**, D. J. Wieczynski, V. M. Savage. Predator-Prey Size Ratios Constrain Trophic Structure, Strength, and Stability. (*In prep.*)
+- **Christensen S.**, Chu R., Anderson C., Roper M.  Fast Asymptotic-Numerical Method For Coarse Mesh Particle Simulation In Channel Of Arbitrary Cross Section.
+
+Chu R., **Christensen S.**, Ji H., Roper M. A theory for curvature-induced migration in inertial microfluidic devices.
