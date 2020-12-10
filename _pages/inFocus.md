@@ -18,7 +18,7 @@ InFocus is an easy-to-use tool that can calculate particle focusing positions in
 
 Example: Uniform mesh on a triangle
 ```matlab
-pv  [0  0;  1  0;  0.2  1];  %Polygon Vertices
+pv = [0  0;  1  0;  0.2  1];  %Polygon Vertices
 Re = 1;  %Reynolds Number
 [xp, v] = findMigrationPolyChannel(pv,Re);
 ```
